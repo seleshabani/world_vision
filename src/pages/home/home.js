@@ -1,10 +1,18 @@
 import React from 'react'
+import Hero from '../../components/hero/Hero';
+import Nav from '../../components/nav/nav';
+import { ContentWraper, PageWrapper } from './styledHome';
 
 const Home = () => {
     return (
-        <div>
-            <h1>home</h1>
-        </div>
+        <>
+            <Nav/>
+            <PageWrapper>
+                <ContentWraper>
+                    <Hero/>
+                </ContentWraper>
+            </PageWrapper>
+        </>
     )
 }
 export default Home;
