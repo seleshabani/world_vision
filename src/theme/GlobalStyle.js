@@ -9,6 +9,10 @@ const GlobalStyles = createGlobalStyle`
         margin: 0;
         font-size:15px;
     }
+    * img{
+        width:100%;
+        height: auto;
+    }
     #root{
         overflow-x:hidden;
     }

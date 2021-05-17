@@ -10,7 +10,7 @@ export const NavWrapper = styled.nav`
     align-content:center;
 `
 export const NavContainer = styled.div`
-    width:90%;
+    width:85%;
     height:80px;
     display:flex;
     flex-direction:row;

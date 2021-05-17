@@ -7,22 +7,11 @@ export const HeroWrapper = styled.div`
     flex-direction:row;
 `
 export const HeroAction = styled.div`
-    width:40%;
+    width:45%;
     display:flex;
     flex-direction:column;
     justify-content:center;
     position: relative;
-    /* &::after{
-        content:'';
-        width:70px;
-        height:100%;
-        position: absolute;
-        right:0;
-        top:0;
-        background-color:white;
-        transform:skewX(-20deg) translateX(40px);
-        z-index:999;
-    } */
     & h1{
         font-weight:800;
         font-size:2rem;
@@ -38,7 +27,7 @@ export const HeroAction = styled.div`
 `
 export const HeroImg = styled.div`
    
-    width:60%;
+    width:55%;
     height:90%;
     position:relative;
     /* border:solid red; */
