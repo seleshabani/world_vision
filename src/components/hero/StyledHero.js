@@ -2,9 +2,14 @@ import styled from 'styled-components'
 
 export const HeroWrapper = styled.div`
     width:100%;
-    height:calc(100vh - 350px);
+    height:calc(100vh - 350px);//pour avoir un jolie effet d'inclinaison
     display:flex;
     flex-direction:row;
+    @media screen and (max-width: 600px) {
+        flex-direction:column-reverse;
+        height: auto;
+        width:100%;
+    }
 `
 export const HeroAction = styled.div`
     width:45%;
@@ -57,5 +62,12 @@ export const HeroImg = styled.div`
         /* transform:translateX(-10px); */
         background:linear-gradient(#6fe1c7,#3f8294);
         z-index:-1;
+    }
+    @media screen and (max-width: 600px) {
+        width:100%;
+        &::before{
+            content:'';
+            display:none;
+        }
     }
 `
