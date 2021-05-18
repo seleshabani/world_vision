@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/world_vision/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/world_vision/static/js/main.402aa7c7.chunk.js",
+    "main.js.map": "/world_vision/static/js/main.402aa7c7.chunk.js.map",
+    "runtime-main.js": "/world_vision/static/js/runtime-main.001cb32e.js",
+    "runtime-main.js.map": "/world_vision/static/js/runtime-main.001cb32e.js.map",
+    "static/js/2.0f96d1fe.chunk.js": "/world_vision/static/js/2.0f96d1fe.chunk.js",
+    "static/js/2.0f96d1fe.chunk.js.map": "/world_vision/static/js/2.0f96d1fe.chunk.js.map",
+    "index.html": "/world_vision/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/world_vision/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.0f96d1fe.chunk.js.LICENSE.txt": "/world_vision/static/js/2.0f96d1fe.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.001cb32e.js",
+    "static/js/2.0f96d1fe.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.402aa7c7.chunk.js"
+  ]
+}
