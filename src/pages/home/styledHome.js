@@ -29,7 +29,7 @@ export const ContentSectionTitle = styled.div`
     & h2 a{
         text-transform:uppercase;
         text-decoration:none;
-        color:#8dd1d3;
+        color:${props=>props.theme.color.SectionTitle};
     }
 `
 export const ContentSectionSongsItems = styled.div`
@@ -81,8 +81,8 @@ export const ArtistItem = styled.div`
     align-content:center;
     justify-content:center;
     & img{
-        width:96%;
-        height: 96%;
+        width:93%;
+        height: 93%;
     }
     &::before{
         content:'';
@@ -96,5 +96,34 @@ export const ArtistItem = styled.div`
         height:100%;
         /* border:solid red; */
         background:linear-gradient(#6fe1c7,#3f8294);
+    }
+`
+export const Testimonials = styled.div`
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    align-content:center;
+    justify-content:space-around;
+    border-bottom:solid 1px #f3f3f4;
+    margin-bottom:10px;
+`
+export const TestimonialsImg = styled.div`
+    width:250px;
+    height: 250px;
+    border-radius:50%;
+    overflow:hidden;
+    & img{
+        width:100%;
+        height: 100%;
+    }
+`
+export const TestimonialsContent = styled.div`
+    width:50%;
+    display:flex;
+    flex-direction:column;
+    /* margin-bottom:300px; */
+    & h2{
+        font-weight:800;
     }
 `

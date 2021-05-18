@@ -20,12 +20,14 @@ export const NavContainer = styled.div`
 `
 export const NavBrand = styled.div`
     width:15%;
-    & h1{
+    & h1 a{
         cursor: pointer;
         font-size:1rem;
         text-transform:uppercase;
+        text-decoration:none;
         font-weight:800;
         letter-spacing:1px;
+        color:black;
     }
 `
 export const NavItems = styled.ul`

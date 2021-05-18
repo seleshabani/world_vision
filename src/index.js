@@ -3,15 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import GlobalStyles from './theme/GlobalStyle';
-// import { ThemeContext} from 'styled-components';
-// import {ThemeConfig} from './theme/Theme'
+import { ThemeProvider } from 'styled-components';
+import {ThemeConfig} from './theme/Theme'
 
 ReactDOM.render(
     <>
     <GlobalStyles/>
-    {/* <ThemeContext theme={ThemeConfig}> */}
+    <ThemeProvider theme={ThemeConfig}>
       <App />
-    {/* </ThemeContext> */}
+    </ThemeProvider>
     </>,
   document.getElementById('root')
 );

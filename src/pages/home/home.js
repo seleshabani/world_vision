@@ -1,13 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import Hero from '../../components/hero/Hero';
-import Nav from '../../components/nav/nav';
-import { ContentSection, ContentWraper, PageWrapper,ContentSectionTitle, ContentSectionSongsItems, SongsItem, ContentArtistItems, ArtistItem } from './styledHome';
+import { ContentSection, ContentWraper, PageWrapper,ContentSectionTitle, ContentSectionSongsItems, SongsItem, ContentArtistItems, ArtistItem, Testimonials, TestimonialsImg, TestimonialsContent } from './styledHome';
 
 const Home = () => {
     return (
         <>
-            <Nav/>
             <PageWrapper>
                 <ContentWraper>
                     <Hero/>
@@ -63,6 +61,17 @@ const Home = () => {
                             </ArtistItem>
                         </ContentArtistItems>
                     </ContentSection>
+                    <Testimonials>
+                        <TestimonialsImg>
+                            <img src={`${process.env.PUBLIC_URL}/img/songs/test.png`} alt="" />
+                        </TestimonialsImg>
+                        <TestimonialsContent>
+                            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                            <cite>
+                                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis magnam nostrum iure, ipsum tempore tenetur consequuntur temporibus, harum consequatur nam ullam, illum velit eaque similique aperiam doloribus ad voluptates repellendus doloremque. Voluptas minus, quaerat nam maxime, magni esse dicta maiores et quasi ratione nulla magnam quos corrupti in! Deserunt perferendis accusantium commodi voluptates sequi cumque atque iure, rerum sapiente placeat magnam consequuntur saepe est maiores enim quia eligendi nemo expedita blanditiis distinctio sint quos officia vero iste. A velit facere aliquam quas ipsa dicta, non delectus, fugit expedita mollitia deleniti sed error odio temporibus? Ipsum nisi rem possimus recusandae optio labore cupiditate reiciendis reprehenderit harum adipisci molestiae tempora quisquam, accusantium odio! Eligendi."
+                            </cite>
+                        </TestimonialsContent>
+                    </Testimonials>
                 </ContentWraper>
             </PageWrapper>
         </>

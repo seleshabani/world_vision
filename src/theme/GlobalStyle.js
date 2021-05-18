@@ -9,6 +9,12 @@ const GlobalStyles = createGlobalStyle`
         margin: 0;
         font-size:15px;
     }
+    body main{
+        min-height:100%;
+        position: relative;
+        display:flex; 
+        flex-direction:column; 
+    }
     * img{
         width:100%;
         height: auto;

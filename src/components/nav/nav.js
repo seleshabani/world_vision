@@ -1,17 +1,17 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { NavBrand, NavContainer, NavItems, NavItemsLink, NavWrapper } from './styledNav'
 const Nav = () => {
     return (
         <NavWrapper>
             <NavContainer>
                 <NavBrand>
-                    <h1>World Vision</h1>
+                    <h1><Link to='/'>World Vision</Link></h1>
                 </NavBrand>
                 <NavItems>
                     <NavItemsLink>
                         ❔
-                        <NavLink to="artistes">
+                        <NavLink to="apropos">
                             A propos
                         </NavLink>
                     </NavItemsLink>
@@ -23,7 +23,7 @@ const Nav = () => {
                     </NavItemsLink>
                     <NavItemsLink>
                         <i className="fa fa-music"></i>
-                        <NavLink to="artistes">
+                        <NavLink to="stream">
                             stream
                         </NavLink>
                     </NavItemsLink>

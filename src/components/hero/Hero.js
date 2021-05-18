@@ -13,7 +13,7 @@ const Hero = () => {
                 </Button>
             </HeroAction>
             <HeroImg>
-                <img src={`${process.env.PUBLIC_URL}/img/z1.jpg`} alt=''/>
+                <img src={`${process.env.PUBLIC_URL}/img/wv.jpeg`} alt=''/>
             </HeroImg>
         </HeroWrapper>
     )
