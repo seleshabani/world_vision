@@ -52,6 +52,9 @@ const Nav = () => {
                 <Link to="/artistes">
                     artistes
                 </Link>
+                <Link to="/streams">
+                    streaming
+                </Link>
                 <Link to="/actus">
                     actualités
                 </Link>

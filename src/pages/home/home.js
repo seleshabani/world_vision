@@ -12,7 +12,7 @@ const Home = () => {
                     <ContentSection>
                         <ContentSectionTitle>
                             <h1>Notre musique</h1>
-                            <h2><Link to='/'>Voir tout</Link></h2>
+                            <h2><Link to='/streams'>Voir tout</Link></h2>
                         </ContentSectionTitle>
                         <ContentSectionSongsItems>
                             <SongsItem>
@@ -47,7 +47,7 @@ const Home = () => {
                     <ContentSection>
                         <ContentSectionTitle>
                             <h1>Nos artistes</h1>
-                            <h2><Link to=''>Voir tout</Link></h2>
+                            <h2><Link to='/artistes'>Voir tout</Link></h2>
                         </ContentSectionTitle>
                         <ContentArtistItems>
                             <ArtistItem>
