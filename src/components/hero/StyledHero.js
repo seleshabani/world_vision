@@ -47,7 +47,7 @@ export const HeroImg = styled.div`
         position: absolute;
         left:0;
         top:0;
-        background-color:white;
+        background-color:${(props)=>props.theme.body};
         transform:skewX(-20deg) translateX(-50px);
         z-index:999;
     }

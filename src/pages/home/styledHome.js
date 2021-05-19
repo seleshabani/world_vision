@@ -78,6 +78,7 @@ export const ContentArtistItems = styled.div`
     display:flex;
     flex-direction:row;
     justify-content:space-between;
+    margin-bottom:2rem;
     @media screen and (max-width: 600px) {
         flex-direction:column;
         gap:.5rem;
@@ -92,10 +93,10 @@ export const ArtistItem = styled.div`
     align-content:center;
     justify-content:center;
     & img{
-        width:93%;
-        height: 93%;
+        width:90%;
+        height: 90%;
     }
-    &::before{
+    &::after{
         content:'';
         left:0;
         right:0;
@@ -120,7 +121,8 @@ export const Testimonials = styled.div`
     align-content:center;
     justify-content:space-around;
     border-bottom:solid 1px #f3f3f4;
-    margin-bottom:10px;
+    margin-bottom:2rem;
+    padding-bottom:1rem;
     @media screen and (max-width: 600px) {
         flex-direction:column;
     }

@@ -1,11 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import { motion } from "framer-motion"
 import Hero from '../../components/hero/Hero';
 import { ContentSection, ContentWraper, PageWrapper,ContentSectionTitle, ContentSectionSongsItems, SongsItem, ContentArtistItems, ArtistItem, Testimonials, TestimonialsImg, TestimonialsContent } from './styledHome';
 
 const Home = () => {
     return (
-        <>
+        <motion.div exit={{ opacity: 0 }}>
             <PageWrapper>
                 <ContentWraper>
                     <Hero/>
@@ -74,7 +75,7 @@ const Home = () => {
                     </Testimonials>
                 </ContentWraper>
             </PageWrapper>
-        </>
+        </motion.div>
     )
 }
 export default Home;

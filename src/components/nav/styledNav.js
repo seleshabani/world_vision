@@ -27,7 +27,7 @@ export const NavBrand = styled.div`
         text-decoration:none;
         font-weight:800;
         letter-spacing:1px;
-        color:black;
+        color:${(props)=>props.theme.text};
     }
     @media screen and (max-width: 600px) {
         width:35%;
@@ -52,7 +52,7 @@ export const NavItemsLink = styled.li`
     margin-left:10px;
     & a{
         cursor: pointer;
-        color:black;
+        color:${(props)=>props.theme.text};
         margin-left:5px;
         text-decoration:none;
     }

@@ -1,8 +1,20 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { Link } from 'react-router-dom';
-import { FooterAction, FooterBrand, FooterContent, FooterCopy, FooterItems, FooterItemsItem, FooterWrapper } from './styledFooter';
+import { FooterAction, FooterBrand, FooterContent, FooterCopy, FooterItems, FooterItemsItem, FooterThemeToggler, FooterWrapper } from './styledFooter';
 
-const Footer = () => {
+const Footer = ({onThemeChange,theme}) => {
+    const [isDark, setisDark] = useState(false);
+
+    const handleDarkmode = ()=>{
+        // theme ==='light'? onThemeChange('dark'):onThemeChange('light')
+        if (theme ==='light') {
+            onThemeChange('dark')
+            setisDark(true)
+        }else{
+            onThemeChange('light')
+            setisDark(false)
+        }
+    }
     return (
         <FooterWrapper>
             <FooterContent>
@@ -21,9 +33,10 @@ const Footer = () => {
                     <i className="fa fa-arrow-up"></i>
                 </FooterAction>
             </FooterContent>
-            {/* <FooterCopy>
+            <FooterCopy>
                 <h6>&copy;SeleShabani</h6>
-            </FooterCopy> */}
+                <FooterThemeToggler isDark={isDark} onClick={()=>handleDarkmode()}/>
+            </FooterCopy>
         </FooterWrapper>
     )
 }
