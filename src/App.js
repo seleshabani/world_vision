@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import { BrowserRouter, Route, Switch, useLocation } from 'react-router-dom';
+import { Route, Switch, useLocation } from 'react-router-dom';
 import { AnimatePresence } from "framer-motion";
 import Footer from './components/footer/Footer';
 import Nav from './components/nav/nav';
@@ -10,6 +10,7 @@ import Stream from './pages/stream/stream'
 import GlobalStyles from './theme/GlobalStyle';
 import { ThemeProvider } from 'styled-components';
 import { darkTheme, lightTheme } from './theme/Theme';
+import Actus from './pages/actus/actus';
 
 const App = () => {
      const [Theme, setTheme] = useState('light');
@@ -26,7 +27,8 @@ const App = () => {
                 <Route exact path='/' component={Home}/>
                 <Route exact path='/artistes' component={Artistes}/>
                 <Route exact path='/apropos' component={Apropos}/>
-                <Route exact path='/stream' component={Stream}/>
+                <Route exact path='/streams' component={Stream}/>
+                <Route exact path='/actus' component={Actus}/>
             </Switch>
             </AnimatePresence>
             <Footer onThemeChange={setTheme} theme={Theme}/>

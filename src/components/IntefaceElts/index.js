@@ -12,3 +12,11 @@ export const Button = styled.div`
     background:${ ({bgck})=> bgck };
     cursor: pointer;
 `
+export const PageWrapper = styled.div`
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-content:center;
+    align-items:center;
+`

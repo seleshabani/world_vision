@@ -13,9 +13,15 @@ const Nav = () => {
                 </NavBrand>
                 <NavItems>
                     <NavItemsLink>
-                        ❔
-                        <NavLink to="apropos">
-                            A propos
+                        <i className="fa fa-newspaper-o"></i>
+                        <NavLink to="actus">
+                            actualités
+                        </NavLink>
+                    </NavItemsLink>
+                    <NavItemsLink>
+                        <i className="fa fa-music"></i>
+                        <NavLink to="streams">
+                            stream
                         </NavLink>
                     </NavItemsLink>
                     <NavItemsLink>
@@ -25,9 +31,9 @@ const Nav = () => {
                         </NavLink>
                     </NavItemsLink>
                     <NavItemsLink>
-                        <i className="fa fa-music"></i>
-                        <NavLink to="stream">
-                            stream
+                        ❔
+                        <NavLink to="apropos">
+                            A propos
                         </NavLink>
                     </NavItemsLink>
                 </NavItems>
@@ -46,17 +52,17 @@ const Nav = () => {
                 </MobileNavAction>
             </MobileNavBrand>
             <MobileNavItems>
-                <Link to="/apropos">
-                    a propos
-                </Link>
-                <Link to="/artistes">
-                    artistes
+                <Link to="/actus">
+                    actualités
                 </Link>
                 <Link to="/streams">
                     streaming
                 </Link>
-                <Link to="/actus">
-                    actualités
+                <Link to="/artistes">
+                    artistes
+                </Link>
+                <Link to="/apropos">
+                    a propos
                 </Link>
             </MobileNavItems>
         </MobileNavWrapper>

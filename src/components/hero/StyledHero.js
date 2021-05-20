@@ -25,11 +25,12 @@ export const HeroAction = styled.div`
     & h2{
         font-weight:400;
         font-size:1rem;
-        color:#757575;
+        color:${(props)=>props.theme.text};
         margin-bottom:1rem;
         /* transform:skewX(20deg); */
     }
 `
+
 export const HeroImg = styled.div`
    
     width:55%;

@@ -2,7 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import { motion } from "framer-motion"
 import Hero from '../../components/hero/Hero';
-import { ContentSection, ContentWraper, PageWrapper,ContentSectionTitle, ContentSectionSongsItems, SongsItem, ContentArtistItems, ArtistItem, Testimonials, TestimonialsImg, TestimonialsContent } from './styledHome';
+import { ContentSection, ContentWraper,ContentSectionTitle, ContentSectionSongsItems, SongsItem, ContentArtistItems, ArtistItem, Testimonials, TestimonialsImg, TestimonialsContent } from './styledHome';
+import { PageWrapper } from '../../components/IntefaceElts';
 
 const Home = () => {
     return (
