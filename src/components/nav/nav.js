@@ -13,7 +13,7 @@ const Nav = () => {
                 </NavBrand>
                 <NavItems>
                     <NavItemsLink>
-                        <i className="fa fa-newspaper-o"></i>
+                        <i className="fa fa-newspaper"></i>
                         <NavLink to="actus">
                             actualités
                         </NavLink>
@@ -48,7 +48,7 @@ const Nav = () => {
                     world vision
                 </Link>
                 <MobileNavAction onClick={()=>{SetMobileIsVisible(false)}}>
-                    <i className="fa fa-close"></i>
+                    <i className="fa fa-times"></i>
                 </MobileNavAction>
             </MobileNavBrand>
             <MobileNavItems>

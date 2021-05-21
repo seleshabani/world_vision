@@ -23,19 +23,37 @@ const Footer = ({onThemeChange,theme}) => {
                 </FooterBrand>
                 <FooterItems>
                     <FooterItemsItem>
+                        <i className="fa fa-newspaper"></i>
+                        <Link to='actus'>
+                            actualités
+                        </Link>
+                    </FooterItemsItem>
+                    <FooterItemsItem>
+                        <i className="fa fa-music"></i>
+                        <Link to='streams'>
+                            streams
+                        </Link>
+                    </FooterItemsItem>
+                    <FooterItemsItem>
                         <i className="fa fa-users"></i>
-                        <Link to=''>
-                            Artistes
+                        <Link to='artistes'>
+                            artistes
                         </Link>
                     </FooterItemsItem>
                 </FooterItems>
                 <FooterAction>
-                    <i className="fa fa-arrow-up"></i>
+                    <a href='#top'>
+                        <i className="fa fa-arrow-up"></i>
+                    </a>
                 </FooterAction>
             </FooterContent>
             <FooterCopy>
-                <h6>&copy;SeleShabani</h6>
-                <FooterThemeToggler isDark={isDark} onClick={()=>handleDarkmode()}/>
+                <h6><a rel="noreferrer" target="_blank" href='https://seleshabani.github.io/html_Templates/portfolio_v5/'>&copy;SeleShabani</a></h6>
+                <div className="dark_toggler">
+                    <i className="fa fa-sun"></i>
+                    <FooterThemeToggler isDark={isDark} onClick={()=>{handleDarkmode()}}/>
+                    <i className='fa fa-moon'></i>
+                </div>
             </FooterCopy>
         </FooterWrapper>
     )

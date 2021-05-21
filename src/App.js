@@ -19,6 +19,7 @@ const App = () => {
     return(
         <ThemeProvider theme={Theme==='light'?lightTheme:darkTheme}>
         <GlobalStyles/>
+        <span id="#top"></span>
         <main>
         <Nav/>
         <AnimatePresence exitBeforeEnter>

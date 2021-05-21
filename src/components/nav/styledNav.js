@@ -126,6 +126,9 @@ export const MobileNavAction = styled.div`
     justify-content:center;
     align-content:center;
     cursor: pointer;
+    & a{
+        color:black;
+    }
 `
 export const MobileNavItems = styled.nav`
     width:100%;

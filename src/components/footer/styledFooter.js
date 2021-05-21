@@ -9,6 +9,7 @@ export const FooterWrapper = styled.footer`
     align-content:center;
     align-items:center;
     justify-content:space-between;
+    margin-top: 1rem;
     /* padding:.5rem; */
 `
 
@@ -30,6 +31,7 @@ export const FooterItems = styled.ul`
     flex-direction:row;
     align-items:center;
     list-style:none;
+    gap: 1.2rem;
     @media(max-width:600px){
         flex-direction:column;
         gap:.5rem;
@@ -62,6 +64,9 @@ export const FooterAction = styled.div`
     align-items:center;
     align-content:center;
     cursor: pointer;
+    & a{
+        color:#3f8294;
+    }
 `
 export const FooterCopy = styled.div`
     width:85%;
@@ -77,6 +82,23 @@ export const FooterCopy = styled.div`
     & h6{
         font-size:.8rem;
     }
+    & .dark_toggler{
+        width: 100px;
+        height: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        /* background-color: red; */
+        color:white;
+        & i{
+            color: white;
+        }
+    }
+    & a{
+        color: white;
+    }
 `
 export const FooterThemeToggler = styled.div`
     width:45px;
@@ -90,7 +112,7 @@ export const FooterThemeToggler = styled.div`
         width:20px;
         height: 20px;
         border-radius:50%;
-        background-color:black;
+        background:linear-gradient(#6fe1c7,#3f8294);
         /* background:; */
         position: absolute;
         transition:all 300ms;

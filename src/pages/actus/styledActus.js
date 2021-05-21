@@ -45,6 +45,7 @@ export const Actuitem = styled.div`
     justify-content:space-between;
     align-items:center;
     background-color:${(props)=>props.theme.body};
+    margin-bottom: 1.5rem;
     /* box-shadow: 10px 5px 5px black; */
     & .img{
         width:25%;

@@ -7,7 +7,7 @@ export const ThemeConfig = {
     }
 }
 export const lightTheme = {
-    body: '#FFF',
+    body: 'white',
     text: '#363537',
     toggleBorder: '#FFF',
     background: '#363537',

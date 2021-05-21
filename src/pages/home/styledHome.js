@@ -141,5 +141,6 @@ export const TestimonialsContent = styled.div`
     }
     @media screen and (max-width: 600px) {
         width:100%;
+        text-align: justify;
     }
 `
