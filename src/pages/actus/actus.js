@@ -31,7 +31,7 @@ function Actus() {
                             </div>
                             <div className="content">
                                 <h2>
-                                <Link to="single">
+                                <Link to="/single">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, dolore?
                                 </Link>
                                 </h2>
@@ -43,7 +43,7 @@ function Actus() {
                             </div>
                             <div className="content">
                                 <h2>
-                                <Link to="single">
+                                <Link to="/single">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, dolore?
                                 </Link>
                                 </h2>

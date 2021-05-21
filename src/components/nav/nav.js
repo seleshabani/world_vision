@@ -14,25 +14,25 @@ const Nav = () => {
                 <NavItems>
                     <NavItemsLink>
                         <i className="fa fa-newspaper"></i>
-                        <NavLink to="actus">
+                        <NavLink to="/actus">
                             actualités
                         </NavLink>
                     </NavItemsLink>
                     <NavItemsLink>
                         <i className="fa fa-music"></i>
-                        <NavLink to="streams">
+                        <NavLink to="/streams">
                             stream
                         </NavLink>
                     </NavItemsLink>
                     <NavItemsLink>
                         <i className="fa fa-users"></i>
-                        <NavLink to="artistes">
+                        <NavLink to="/artistes">
                             artistes
                         </NavLink>
                     </NavItemsLink>
                     <NavItemsLink>
                         ❔
-                        <NavLink to="apropos">
+                        <NavLink to="/apropos">
                             A propos
                         </NavLink>
                     </NavItemsLink>
