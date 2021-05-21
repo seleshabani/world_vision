@@ -29,31 +29,36 @@ export const FooterItems = styled.ul`
     width:40%;
     display:flex;
     flex-direction:row;
+    justify-content:space-between;
     align-items:center;
     list-style:none;
-    gap: 1.2rem;
+    /* gap: 1.2rem; */
     @media(max-width:600px){
+        /* width: 50%; */
         flex-direction:column;
         gap:.5rem;
     }
 `
 export const FooterItemsItem = styled.li`
-    width:15%;
+    width:20%;
     display:flex;
     flex-direction:row;
     align-items:center;
-    gap:.5rem;
+    gap:.3rem;
     color:white;
     & a{
         color:white;
         text-transform:none;
         text-decoration:none;
     }
+    @media(max-width:600px){
+        width: 100%;
+    }
 `
 export const FooterAction = styled.div`
     padding:.5rem;
-    width:1rem;
-    height: 1rem;
+    width:2rem;
+    height: 2rem;
     border-radius:50%;
     border:solid 1px #f3f3f4;
     color:white;

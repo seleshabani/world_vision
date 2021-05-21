@@ -40,6 +40,12 @@ const Footer = ({onThemeChange,theme}) => {
                             artistes
                         </Link>
                     </FooterItemsItem>
+                    <FooterItemsItem>
+                        ❔
+                        <Link to='apropos'>
+                            a propos
+                        </Link>
+                    </FooterItemsItem>
                 </FooterItems>
                 <FooterAction>
                     <a href='#top'>

@@ -42,7 +42,7 @@ const Nav = () => {
                 </NavMobileMenuToggle>
             </NavContainer>
         </NavWrapper>
-        <MobileNavWrapper ref={mobileNavWrapperRef} isVisible={mobileIsVisible}>
+        <MobileNavWrapper onBlur={()=>SetMobileIsVisible(false)} ref={mobileNavWrapperRef} isVisible={mobileIsVisible}>
             <MobileNavBrand>
                 <Link to="/">
                     world vision

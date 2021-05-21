@@ -108,7 +108,14 @@ export const ArtistItem = styled.div`
     }
 `
 export const Testimonials = styled.div`
-    width:100%;
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+`
+export const TestimonialsRows = styled.div``
+export const TestimonialsItem = styled.div`
+    width:90%;
     display:flex;
     flex-direction:row;
     align-items:center;
@@ -143,4 +150,18 @@ export const TestimonialsContent = styled.div`
         width:100%;
         text-align: justify;
     }
+`
+export const TestimonialsAction = styled.div`
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background:linear-gradient(#6fe1c7,#3f8294);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    cursor: pointer;
+    margin-left: .5rem;
+    margin-right: .5rem;
 `
