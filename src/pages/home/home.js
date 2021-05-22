@@ -22,7 +22,9 @@ const Home = () => {
                                 <div className="description">
                                     <h2>lorem ipsum.</h2>
                                     <div className="play">
-                                        <i className="fa fa-play"></i>
+                                        <Link to="/streams">
+                                            <i className="fa fa-play"></i>
+                                        </Link>
                                     </div>
                                 </div>
                             </SongsItem>
@@ -31,7 +33,9 @@ const Home = () => {
                                 <div className="description">
                                     <h2>lorem ipsum.</h2>
                                     <div className="play">
-                                        <i className="fa fa-play"></i>
+                                        <Link to="/streams">
+                                            <i className="fa fa-play"></i>
+                                        </Link>
                                     </div>
                                 </div>
                             </SongsItem>
@@ -40,7 +44,9 @@ const Home = () => {
                                 <div className="description">
                                     <h2>lorem ipsum.</h2>
                                     <div className="play">
-                                        <i className="fa fa-play"></i>
+                                        <Link to="/streams">
+                                            <i className="fa fa-play"></i>
+                                        </Link>
                                     </div>
                                 </div>
                             </SongsItem>

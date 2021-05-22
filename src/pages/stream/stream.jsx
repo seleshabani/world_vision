@@ -1,7 +1,8 @@
 import React from 'react'
 import {motion} from 'framer-motion'
 import { PageWrapper } from '../../components/IntefaceElts'
-import { Player, PlayerActions, PlayerImg, PlayListContents, PlayListItem, PlayListItemDetail, PlayListItemImg, PlayListWrapper } from './styledStream'
+import { PlayListContents, PlayListItem, PlayListItemDetail, PlayListItemImg, PlayListWrapper } from './styledStream'
+import Player from './components/player'
 
 function Stream() {
     return (
@@ -47,14 +48,7 @@ function Stream() {
                         </PlayListItemDetail>
                     </PlayListItem>
                 </PlayListContents>
-                <Player>
-                    <PlayerImg>
-                        <img src={`${process.env.PUBLIC_URL}/img/songs/a1.jpg`} alt="" />
-                    </PlayerImg>
-                    <PlayerActions>
-
-                    </PlayerActions>
-                </Player>
+                <Player/>
             </PlayListWrapper>
         </PageWrapper>    
     </motion.div>

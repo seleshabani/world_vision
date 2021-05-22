@@ -7,6 +7,7 @@ export const ThemeConfig = {
     }
 }
 export const lightTheme = {
+    name:'light',
     body: 'white',
     text: '#363537',
     toggleBorder: '#FFF',
@@ -14,6 +15,7 @@ export const lightTheme = {
     ...ThemeConfig
 }
 export const darkTheme = {
+    name:'dark',
     body: '#363537',
     text: '#FAFAFA',
     toggleBorder: '#6B8096',

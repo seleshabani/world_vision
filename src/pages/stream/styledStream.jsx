@@ -60,7 +60,7 @@ export const PlayListItemDetail = styled.div`
         font-size: .5rem;
     }
 `
-export const Player = styled.div`
+export const StyledPlayer = styled.div`
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -68,27 +68,62 @@ export const Player = styled.div`
     align-items: center;
     align-content: center;
     gap: 1rem;
+    border: solid 1px #f3f3f4;
+    margin-right: 2.5%;
     @media screen and (max-width: 600px) {
         width: 100%;
         height: 100px;
         flex-direction: row;
         align-items: center;
+        align-content: center;
         justify-content: space-between;
+        margin-right: 0%;
     }
 `
 export const PlayerImg = styled.div`
-    width: 90%;
+    width: 100%;
     height: 100px;
     margin-bottom:1rem ;
     & img{
         width: 100%;
         height: 100%;
     }
+    @media screen and (max-width: 600px) {
+        /* width: 100%; */
+        margin-top: 1rem;
+        height: 90px;
+    }
 `
 export const PlayerActions = styled.div`
     width: 100%;
-    height: 100px;
+    height: 80px;
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
+    color: ${(props)=>props.theme.name==='light'?'white':'black'};
+    background-color: ${(props)=>props.theme.name==='light'?props.theme.text:'white'};
+    padding: 1rem;
+`
+
+export const PlayerBtnPlay = styled.div`
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border: solid 1px ${(props)=>props.theme.color.SectionTitle};
+    font-size: 1.5rem;
+    cursor: pointer;
+`
+export const PlayerBtnsmove = styled.div`
+    width: 50px;
+    font-size: .8rem;
+    color: ${(props)=>props.theme.color.SectionTitle};
+    cursor: pointer;
+`
+export const StyledAudio = styled.audio`
+    display: none;
 `

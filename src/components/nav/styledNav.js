@@ -30,7 +30,7 @@ export const NavBrand = styled.div`
         color:${(props)=>props.theme.text};
     }
     @media screen and (max-width: 600px) {
-        width:35%;
+        width:65%;
     }
 `
 export const NavItems = styled.ul`

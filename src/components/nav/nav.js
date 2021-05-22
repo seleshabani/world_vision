@@ -9,7 +9,7 @@ const Nav = () => {
         <NavWrapper>
             <NavContainer>
                 <NavBrand>
-                    <h1><Link to='/'>World Vision</Link></h1>
+                    <h1><Link to='/'>World Vision | Emperuim</Link></h1>
                 </NavBrand>
                 <NavItems>
                     <NavItemsLink>
