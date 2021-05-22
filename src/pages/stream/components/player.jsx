@@ -2,7 +2,7 @@ import React from 'react'
 import { useRef,useState } from 'react'
 import {StyledPlayer , PlayerActions, PlayerBtnPlay, PlayerBtnsmove, PlayerImg, StyledAudio} from '../styledStream'
 
-const Player = () => {
+const Player = ({Current}) => {
     const playerRef = useRef()
     const [isPlaying, setisPlaying] = useState(false)
 
@@ -19,7 +19,7 @@ const Player = () => {
         <>
             <StyledPlayer>
                     <PlayerImg>
-                        <img src={`${process.env.PUBLIC_URL}/img/songs/a1.jpg`} alt="" />
+                        <img src={Current} alt="" />
                     </PlayerImg>
                     <PlayerActions>
                         <PlayerBtnsmove>

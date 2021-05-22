@@ -1,10 +1,17 @@
 import React from 'react'
+import { StyledPlayListItem, PlayListItemDetail, PlayListItemImg} from '../styledStream'
 
-const PlayListItem = () => {
+const PlayListItem = ({Item,handle}) => {
     return (
-        <div>
-            
-        </div>
+        <StyledPlayListItem onClick={handle}>
+            <PlayListItemImg>
+                <img src={Item} alt="" />
+            </PlayListItemImg>
+            <PlayListItemDetail>
+                <h2>un titre de chanson</h2>
+                <span>Lorem ipsum dolor sit amet.</span>
+            </PlayListItemDetail>
+        </StyledPlayListItem>
     )
 }
 

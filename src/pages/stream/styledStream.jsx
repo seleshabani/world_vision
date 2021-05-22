@@ -29,7 +29,7 @@ export const PlayListContents = styled.div`
         margin-bottom: 1rem;
     }
 `
-export const PlayListItem = styled.div`
+export const StyledPlayListItem = styled.div`
     width: 100%;
     height: 100px;
     display: flex;
@@ -82,7 +82,7 @@ export const StyledPlayer = styled.div`
 `
 export const PlayerImg = styled.div`
     width: 100%;
-    height: 100px;
+    height: 200px;
     margin-bottom:1rem ;
     & img{
         width: 100%;
